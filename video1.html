@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+     <head>
+    <title>Yoga To Go</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/theme/jquery.mobile.min.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+       
+            <style>
+            #btnCL ,#btnSAVE,#btnback {
+                width: 80px;
+            }
+            #conDleft{
+                width: 250px;
+               
+            }
+            #conDright{
+                width: 500px;
+                height: 300px;
+                border: 1px #000 solid;
+                margin-left:5px; 
+                margin-right:  5px;
+                padding-right: 5px;
+             
+            }  
+            #mypanel img {
+                    width: 60px;
+                    height: 60px
+                }
+              
+        </style>
+     </head>
+    <body>
+       <div data-role="page">
+            
+            <div data-role="header" >
+                <button data-rel=“back” id="btnback" data-transition="flow">Back</button>
+                
+            </div><!-- /header -->
+            <div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+                        <!-- panel content goes here--> 
+                        <img src="01.png"/> <br>
+                        <img src="02.png"/> <br>
+                        <img src="03.png"/>
+                    </div> 
+            <div data-role="header">
+                  
+                <h1>Yoga To Go </h1>
+                <h2>test  video1</h2>
+            </div>
+            
+            <center>
+            <div data-role="content">	
+                
+                
+                    
+                   <video width="320" height="240" controls>
+                    <source src="e-card.mp4" type="video/mp4">
+                    
+                   </video>
+                <p>Description:</p>
+
+                  
+               
+            </div><!-- /content -->
+            </center>
+        </div><!-- /page -->
+        
+         
+    </body>
+</html>

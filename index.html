@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+     <title>Yoga To Go</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/theme/jquery.mobile.min.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+       
+            <style>
+            #btnCL ,#btnSAVE,#btnback {
+                width: 80px;
+            }
+            #conDleft{
+                width: 250px;
+               
+            }
+            #conDright{
+                width: 500px;
+                height: 300px;
+                border: 1px #000 solid;
+                margin-left:5px; 
+                margin-right:  5px;
+                padding-right: 5px;
+             
+            }  
+            #mypanel img {
+                    width: 60px;
+                    height: 60px
+                }
+        </style>
+     </head>
+    <body>
+        <div data-role="page">
+      
+                  
+            <div data-role="content">
+                <div data-role="header">
+                    <h1>Yoga To Go P.1</h1>
+                 </div>
+                <center>
+                <img src="image/yoga.png"  height="128" width="150">
+                </center>
+                <div data-role="content-left">
+                    <ul data-role="listview"  
+                            data-inset="true">
+                        <li><a href="flitering.html" data-transition="flow">Start</a></li>
+                        <li><a href="schedule.html" data-transition="flow">Schedule</a></li>
+                        <li><a href="tips.html" data-transition="flow">Tips</a></li>
+                    </ul>
+                </div>
+            </div><!-- /content -->
+           <!--  <div data-role="footer">
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a href="#" data-icon="grid">Summary</a></li>
+                        <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+                        <li><a href="#" data-icon="gear">Setup</a></li>
+                    </ul>
+                </div><!-- /navbar 
+            </div>/footer -->
+        </div><!-- /page -->
+
+        <div data-role="page" id="page2">
+            
+            <div data-role="header" >
+                <button data-rel=“back” id="btnback" data-transition="flow">Back</button>
+                
+            </div><!-- /header -->
+            <div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+                        <!-- panel content goes here--> 
+                        <img src="01.png"/> <br>
+                        <img src="02.png"/> <br>
+                        <img src="03.png"/>
+                    </div> 
+            <div data-role="header">
+                  <a href="#mypanel">Open panel</a> 
+                <h1>Yoga To Go test link</h1>
+            </div>
+            
+            <div data-role="content">	
+                
+                <div data-role="content-left">
+                    <ul data-role="listview">
+                        <li><a href="#page2" data-transition="flow">list1</a></li>
+                        <li><a href="#">list2</a></li>
+                    </ul>
+                </div>
+            </div><!-- /content -->
+        </div><!-- /page2 -->
+    </body>
+</html>
